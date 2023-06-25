@@ -114,6 +114,8 @@ _👀 Would others be interested in seeing a talk on HTTP cache-control headers?
 
 # Level 4 - Database Replication
 
+**In which we increase the fault tolerance and minimum latency.**
+
 One region is designated as the "leader" instance, and associated with a
 particular region. Every other region is assigned a "replica" database instance
 that reads from a stream of mutations to the leader instance.
@@ -132,6 +134,8 @@ depending on what our database ecosystem supports._
 
 # Level 5 - Microservices
 
+**In which we separate our application into multiple services, and reduce database sizes.**
+
 Our databases "tables" or "collections" are split into multiple services, each with
 their own deployment cycles. Each service can adopt the same multi-region strategy
 described previously.
@@ -139,6 +143,7 @@ described previously.
 ### Advantages
 - Reduces the write volume on a single "leader" db instance
 - Potentially allows the application to be split into multiple codebases of more manageable size.
+- Reduces the storage footprint of single db instances, making them more manageable.
 
 ### Disadvantages
 - Added complexity and latency for resolving relationships between services
