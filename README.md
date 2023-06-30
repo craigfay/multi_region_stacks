@@ -109,7 +109,7 @@ _🤔 Do we need to update our deployment process to account for CDN-busting?_
 _🤔 Do we cache the results of database queries, or the results of our clients'
 HTTP requests?_
 
-_👀 Would others be interested in seeing a talk on HTTP cache-control headers?_
+_👀 Would others be interested in seeing a talk on [HTTP cache-control headers](./CACHE_CONTROL_HEADERS.md)?_
 
 
 # Level 4 - Database Replication
